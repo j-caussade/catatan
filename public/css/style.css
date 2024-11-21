@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  background: black;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+body {
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.button-primary {
+  height: 3rem;
+  width: fit-content;
+  border: none;
+  color: black;
+  background: white;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.button-primary:hover {
+  opacity: 0.7;
+}
+
+.button-large {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  height: 3rem;
+  border: none;
+  color: white;
+  background: #1A1A1A;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-left: 3.5rem;
+  max-width: 500px;
+  cursor: pointer;
+}
+input:hover {
+  opacity: 0.7;
+}
+
+.input-icon {
+  margin-left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.input-button-container {
+  height: 3rem;
+  width: 3rem;
+  background: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.input-button {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.input-button:hover {
+  opacity: 0.7;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+#submit {
+  cursor: pointer;
+}
+#submit:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages/index.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <title>Catatan</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="headline">👋 Hello, welcome to Catatan!</h1>
+        </header>
+        <main>
+            <p>Are you new? <a href="">Create a account</a></p>
+            <form action="home" method="get">
+                <div id="form-container">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <div class="input-container">
+                            <img src="img/email-white.svg" alt="" class="input-icon">
+                            <input type="email" name="email" id="email" required autocomplete="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <div class="input-container">
+                            <img src="img/password-white.svg" alt="" class="input-icon">
+                            <input type="password" name="password" id="password" required autocomplete="current-password" placeholder="Password">
+                            <div class="input-button-container">
+                                <button class="input-button"><img src="img/visibility-on-black.svg" alt="" class="icon"></button>
+                            </div>
+                        </div>
+                        <a href="">Forgot password ?</a>
+                    </div>
+                </div>
+                <button type="submit" value="Sign in" class="button-primary" id="submit">Sign in</button>
+            </form>
+        </main>
+    </body>
+</html>

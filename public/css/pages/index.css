@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header, main {
+  width: 50vw;
+  height: 100vh;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#headline {
+  font-size: 4rem;
+  text-align: center;
+}
+
+main {
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+form #form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-field a {
+  text-align: center;
+}
+
+#password {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#submit {
+  width: 250px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,1 @@
+./dart-sass/sass assets/sass/main.scss:public/css/style.css assets/sass/pages/index.scss:public/css/pages/index.css assets/sass/pages/home.scss:public/css/pages/home.css assets/sass/pages/read.scss:public/css/pages/read.css assets/sass/pages/write.scss:public/css/pages/write.css --watch

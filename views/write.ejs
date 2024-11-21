@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages/write.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet"
+        />
+        <title>Catatan: write</title>
+    </head>
+    <body>
+        <header>
+            <menu>
+                <a href="home"><img src="img/check-white.svg" alt="" class="icon"></a>
+
+                <div id="toolbar">
+                    <button class="ql-bold">Bold</button>
+                    <button class="ql-italic">Italic</button>
+                </div>
+            </menu>
+        </header>
+
+        <input type="text" placeholder="Title">
+        <input type="text" placeholder="tag">
+
+        <main>
+            <div id="editor">
+                <p>Content</p>
+            </div>
+
+            <!-- Include the Quill library -->
+            <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
+            <!-- Initialize Quill editor -->
+            <script>
+                const quill = new Quill("#editor", {
+                theme: "snow",
+                });
+            </script>
+        </main>
+
+    </body>
+</html>
