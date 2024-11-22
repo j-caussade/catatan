@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body {
     display: flex;
     flex-direction: row;
@@ -6,9 +8,9 @@ body {
 }
 
 header, main {
-    width: 50vw;
+    width: 50%;
     height: 100vh;
-    padding: 6rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,12 +18,13 @@ header, main {
 }
 
 #headline {
+    width: 30rem;
     font-size: 4rem;
     text-align: center;
 }
 
 main {
-    align-items: flex-start;
+    // align-items: flex-start;
     gap: 2rem;
 }
 
@@ -55,6 +58,60 @@ form {
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
+.form-field a {
+    font-size: 1rem;
+}
+
 #submit {
     width: 250px;
+}
+
+// Tablet
+@media only screen and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    header, main {
+        width: 100%;
+        height: fit-content;
+    }
+
+    // header {
+    //     // padding: 2rem;
+    // }
+
+    #headline {
+        font-size: 3.5rem;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    .form-field a {
+        font-size: 0.9rem;
+    }
+}
+
+//Smartphone
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    header, main {
+        padding: 0;
+    }
+
+    #headline {
+        width: unset;
+        font-size: 3rem;
+    }
+
+    .form-field a {
+        font-size: 0.8rem;
+    }
 }
